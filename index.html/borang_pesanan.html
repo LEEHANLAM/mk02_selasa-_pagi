@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Pesanan - Tudung Gruffle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>TUDUNG GRUFFLE</h1>
+    </div>
+    
+    <nav class="navbar">
+        <a href="index.html">Laman utama</a>
+        <a href="senarai_produk.html">Senarai produk</a>
+        <a href="borang_pesanan.html">Borang pesanan</a>
+    </nav>
+
+    <div class="order-form">
+        <h2>Borang Pesanan</h2>
+        <form action="submit_order.php" method="POST">
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Tudung</th>
+                    <th>Bil.</th>
+                    <th>Harga per Satu</th>
+                    <th>Jumlah</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" name="nama_tudung" required></td>
+                    <td><input type="number" name="bil" min="1" required></td>
+                    <td><input type="number" name="harga_per_satu" step="0.01" required></td>
+                    <td><input type="number" name="jumlah" step="0.01" required></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+            <p>Jumlah harga: RM <input type="number" name="jumlah_harga" step="0.01" required></p>
+            <p>Ringgit: <input type="text" name="ringgit" required></p>
+            <p>Tandatangan yang disah: <input type="text" name="tandatangan_disah" required></p>
+            <p>Tandatangan pembekal: <input type="text" name="tandatangan_pembekal" required></p>
+            <p>Tarikh: <input type="date" name="tarikh" required></p>
+            <button type="submit">Hantar Pesanan</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>TR x Pos Malaysia</p>
+        <p>📍 IOI City Mall Putrajaya L1-42</p>
+        <p>📍 Pop-Up Cart @ TRX Exchange PC-09 Concourse Floor</p>
+        <p>Irha International Sdn Bhd (1384682-T)</p>
+        <p><a href="https://linktr.ee/tudung_ruuffle">linktr.ee/tudung_ruuffle</a></p>
+    </footer>
+</body>
+</html>
